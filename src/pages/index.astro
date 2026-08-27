@@ -1,11 +1,83 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import Currently from "../components/Currently.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const posts = (await getCollection("blog"))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Tahir Blog">
+  <section class="mb-24">
+    <p class="mb-3 text-sm uppercase tracking-[0.35em] text-stone-300">
+    My Life Journey
+  </p>
+
+    <h1 class="mb-6 text-7xl font-black leading-none tracking-tight md:text-8xl">
+    Story.
+    <br />
+    Run.
+    <br />
+    Explore.
+  </h1>
+
+    <p class="max-w-2xl text-xl leading-9 text-stone-300">
+    Alasan gua kenapa membuat blog ini adalah karena gua pernah denger suatu quotes "jika kamu menuliskan kisah hidupmu dimasa lalu, kelak pas tua kita tinggal membacanya tanpa harus susah payah mengingatnya".
+  </p>
+
+    <div class="mt-10 flex flex-wrap gap-3">
+      <a href="/category/running"
+        class="rounded-full border border-stone-300 px-4 py-2 text-sm transition hover:bg-stone-900 hover:text-white">
+        Running
+      </a>
+
+      <a href="/category/travel"
+        class="rounded-full border border-stone-300 px-4 py-2 text-sm transition hover:bg-stone-900 hover:text-white">
+        Travel
+      </a>
+
+      <a href="/category/tech"
+        class="rounded-full border border-stone-300 px-4 py-2 text-sm transition hover:bg-stone-900 hover:text-white">
+        Tech
+      </a>
+
+      <a href="/category/journal"
+        class="rounded-full border border-stone-300 px-4 py-2 text-sm transition hover:bg-stone-900 hover:text-white">
+        Journal
+      </a>
+    </div>
+
+    <div class="rounded-3xl border border-white/10 bg-white/10 p-6 backdrop-blur-xl">
+      <Currently />
+    </div>
+  </section>
+
+  <section>
+    <div class="mb-8 flex items-center justify-between">
+      <h2 class="text-3xl font-bold">Latest Articles</h2>
+    </div>
+
+    <div class="space-y-5">
+      {posts.map((post) => (
+        <a
+          href={`/blog/${post.id}`}
+          class="group block rounded-3xl border border-white/10 bg-white/10 p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:bg-white/15 hover:shadow-2xl"
+        >
+          <p class="mb-3 text-sm text-stone-300">
+  {post.data.pubDate.toLocaleDateString("id-ID")} • {post.data.category}
+</p>
+
+<h3 class="mb-3 text-2xl font-bold text-white">
+  {post.data.title}
+</h3>
+
+<p class="text-stone-200">
+  {post.data.description}
+</p>
+        </a>
+      ))}
+    </div>
+  </section>
 </Layout>

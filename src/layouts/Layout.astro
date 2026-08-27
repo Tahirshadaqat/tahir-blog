@@ -1,23 +1,91 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import "../styles/global.css";
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+const { title = "Tahir Blog" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+
+  <script is:inline>
+  const root = document.documentElement;
+  const saved = localStorage.getItem("theme");
+
+  if (saved === "dark") {
+    root.classList.add("dark");
+  } else if (saved === "light") {
+    root.classList.remove("dark");
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    root.classList.add("dark");
+  }
+
+  const button = document.getElementById("theme-toggle");
+
+  const updateIcon = () => {
+    button.textContent = root.classList.contains("dark") ? "☀️" : "🌙";
+  };
+
+  updateIcon();
+
+  button.addEventListener("click", () => {
+    root.classList.toggle("dark");
+
+    localStorage.setItem(
+      "theme",
+      root.classList.contains("dark") ? "dark" : "light"
+    );
+
+    updateIcon();
+  });
+</script>
+
+  <body class="relative text-stone-100 transition-colors duration-300">
+  <!-- Background -->
+<div class="fixed inset-0 -z-20">
+  <div
+    class="h-full w-full bg-cover bg-center bg-fixed"
+    style="background-image:url('/backgrounds/background1.jpg')"
+  ></div>
+</div>
+
+<!-- Overlay -->
+<div class="fixed inset-0 -z-10 bg-black/55 backdrop-blur-[1px]"></div>
+  <main class="mx-auto max-w-3xl px-6 py-10">
+
+      <nav class="sticky top-6 z-50 mb-16 flex items-center justify-between rounded-full border border-white/10 bg-white/5 px-6 py-4 backdrop-blur-xl">
+  <a href="/" class="text-xl font-bold tracking-tight">
+    Tahir Blog
+  </a>
+
+  <div class="flex items-center gap-6">
+    <a class="text-sm text-stone-500 dark:text-stone-400 transition hover:text-black dark:hover:text-white" href="/">
+      Home
+    </a>
+
+    <a class="text-sm text-stone-500 dark:text-stone-400 transition hover:text-black dark:hover:text-white" href="/about">
+      About
+    </a>
+
+    <button
+      id="theme-toggle"
+      class="rounded-full border border-stone-300 p-2 transition hover:scale-105 dark:border-stone-700"
+      aria-label="Toggle theme"
+    >
+      🌙
+    </button>
+  </div>
+</nav>
+
+      <slot />
+
+      <footer class="mt-20 border-t border-stone-200 pt-8 text-sm text-stone-500 dark:text-stone-400">
+        © 2026 Tahir Blog
+      </footer>
+
+    </main>
+  </body>
+</html>
