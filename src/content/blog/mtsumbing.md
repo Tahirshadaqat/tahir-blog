@@ -209,19 +209,22 @@ ryan sama kete udah jauh didepan ninggalin gua sama al dibelakang, sebenernya ca
 
 karena kete dan al masih sibuk pacaran gua sama ryan lanjut naik lagi ninggalin dia berdua. trek masih batu-batuan tapi disini agak landai dan juga ngeri karena sebelah kiri ada jurang
 
-<div class="my-8">
-<div class="grid grid-cols-2 gap-4">
-<video controls playsinline preload="metadata" class="w-full rounded-2xl shadow-lg">
-<source src="/video/jurang1.mp4" type="video/mp4">
-</video>
-<video controls playsinline preload="metadata" class="w-full rounded-2xl shadow-lg">
-<source src="/video/jurang2.mp4" type="video/mp4">
-</video>
+<div class="my-8 grid grid-cols-2 gap-4">
+
+<figure>
+<video src="/video/jurang1.mp4" controls playsinline preload="metadata" class="w-full rounded-2xl shadow-lg" style="aspect-ratio:9/16;max-height:420px;object-fit:cover;"></video>
+</figure>
+
+<figure>
+<video src="/video/jurang2.mp4" controls playsinline preload="metadata" class="w-full rounded-2xl shadow-lg" style="aspect-ratio:9/16;max-height:420px;object-fit:cover;"></video>
+</figure>
+
 </div>
-<p class="mt-3 text-center text-sm text-gray-400">
-trek setelah Pasar Watu, agak ngeri karena di samping jurang haha.
+
+<p class="mt-3 mb-8 text-center text-sm text-gray-400">
+  trek setelah Pasar Watu, agak ngeri karena di samping jurang haha.
 </p>
-</div>
+
 
 setelah jalan agak lama dan nggak sampe-sampe gua sama ryan istirahat sebentar(niatnya) sembari nunggu kete sama al, gua langsung rebahan karena udah lemes banget. nggak lama kemudian si kete dan al sampe, gua langsung ambil daypack buat ambil roti sama air karena udah lemes banget, dan air pun langsung habis ditempat karena cuma sedikit. dan ryan ketiduran karena dia lagi drop. kete sama al lanjut naik lagi sementara gua nungguin ryan bangun. akhirnya gua bangunin si ryan kita harus cepet-cepet naik biar nggak kesorean sampe bawah lagi nya.
 
