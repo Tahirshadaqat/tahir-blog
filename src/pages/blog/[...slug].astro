@@ -4,7 +4,9 @@ import Layout from "../../layouts/Layout.astro";
 
 const { slug } = Astro.params;
 
-const post = (await getCollection("blog")).find((p) => p.id === slug);
+const posts = await getCollection("blog");
+
+const post = posts.find((p) => p.id === slug);
 
 if (!post) {
   return Astro.redirect("/404");
@@ -15,17 +17,75 @@ const { Content } = await render(post);
 
 <Layout title={`${post.data.title} | Tahir Blog`}>
   <div class="mb-8">
-    <a href="/" class="text-sm text-stone-300 hover:text-white">← Back</a>
+    <a
+      href="/"
+      class="text-sm text-stone-300 transition-colors hover:text-white"
+    >
+      ← Back
+    </a>
   </div>
 
-  <div class="mb-4">
+  <div class="mb-8">
     <p class="text-sm text-stone-400">
       {post.data.pubDate.toLocaleDateString("id-ID")} • {post.data.category}
     </p>
   </div>
 
-  <article class="prose prose-invert max-w-none prose-headings:text-white prose-p:text-stone-200 prose-strong:text-white">
-    <h1>{post.data.title}</h1>
+  <article
+  class="
+    prose prose-invert max-w-none
+    prose-headings:text-white
+    prose-headings:font-bold
+    prose-headings:tracking-tight
+
+    prose-h1:mb-3
+
+    prose-h2:mt-16
+    prose-h2:mb-8
+    prose-h2:text-3xl
+
+    prose-h3:mt-10
+    prose-h3:mb-3
+    prose-h3:text-xl
+
+    prose-p:text-[17px]
+    prose-p:leading-7
+    prose-p:text-stone-200
+    prose-p:mb-6
+
+    prose-strong:text-white
+    prose-a:text-sky-400
+    prose-a:no-underline
+    hover:prose-a:underline
+  "
+>
+    <header class="not-prose mb-10">
+      <h1 class="mb-3 text-4xl font-black tracking-tight text-white md:text-5xl">
+        {post.data.title}
+      </h1>
+
+      <p class="mb-0 text-base text-stone-400">
+        {post.data.description}
+      </p>
+    </header>
+
     <Content />
   </article>
+
+  <style is:global>
+  .article-content h2 {
+    margin-top: 64px !important;
+    margin-bottom: 32px !important;
+  }
+
+  .article-content h3 {
+    margin-top: 40px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .article-content p {
+    margin-bottom: 24px !important;
+    line-height: 1.75;
+  }
+</style>
 </Layout>
