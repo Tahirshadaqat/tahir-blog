@@ -27,7 +27,7 @@ Kira-kira jam 8 pagi setelah semua siap, kita siap mendaki, awalnya kita mau nai
 <figure
   style="display:flex; flex-direction:column; align-items:center; margin:24px 0;">
   <img
-    src="/images/fotoBasecamp.jpg"
+    src="/images/sumbing/fotoBasecamp.jpg"
     alt="Basecamp Sumbing via Garung"
     style="width:min(100%, 660px); border-radius:16px; display:block;"
   />
@@ -54,7 +54,7 @@ setelah semuanya masuk kita langsung masak makanan buat ngangetin badan, setelah
     preload="metadata"
     class="mx-auto w-3/4 rounded-2xl shadow-lg"
   >
-    <source src="/video/Tendarembes(2).mp4" type="video/mp4" />
+    <source src="/video/sumbing/Tendarembes(2).mp4" type="video/mp4" />
     Browser kamu tidak mendukung video.
   </video>
   <figcaption class="mt-3 text-center text-sm text-gray-400">
@@ -71,7 +71,7 @@ akhirnya mau nggak mau airnya harus dikeluarin biar barang-barang yang lain ngga
     preload="metadata"
     class="mx-auto w-3/4 rounded-2xl shadow-lg"
   >
-    <source src="/video/Ngopilucu.mp4" type="video/mp4" />
+    <source src="/video/sumbing/Ngopilucu.mp4" type="video/mp4" />
     Browser kamu tidak mendukung video.
   </video>
   <figcaption class="mt-3 text-center text-sm text-gray-400">
@@ -84,17 +84,17 @@ Rabu, 19 Juli. kita semua terbangun sekitar jam 7an. tidur semalam pun nyenyak t
 <figure class="my-8">
   <div class="mx-auto w-full sm:w-5/6 md:w-3/4 lg:w-2/3 space-y-3">
     <img
-      src="/images/tenda-1-1.jpg"
+      src="/images/sumbing/tenda-1-1.jpg"
       alt="Tenda 1"
       class="w-full rounded-2xl shadow-md"
     />
     <img
-      src="/images/tenda-1-2.jpg"
+      src="/images/sumbing/tenda-1-2.jpg"
       alt="Tenda 2"
       class="w-full rounded-2xl shadow-md"
     />
     <img
-      src="/images/tenda-1-3.jpg"
+      src="/images/sumbing/tenda-1-3.jpg"
       alt="Tenda 3"
       class="w-full rounded-2xl shadow-md"
     />
@@ -115,7 +115,7 @@ setelah foto-foto kita pun langsung  masak-masak buat sarapan. kita masak sarden
     preload="metadata"
     class="mx-auto w-3/4 rounded-2xl shadow-lg"
   >
-    <source src="/video/masakMasak.mp4" type="video/mp4" />
+    <source src="/video/sumbing/masakMasak.mp4" type="video/mp4" />
     Browser kamu tidak mendukung video.
   </video>
   <figcaption class="mt-3 text-center text-sm text-gray-400">
@@ -132,7 +132,7 @@ setelah makanan siap, tanpa basa-basi langsung kita santap walaupun nasinya ga e
     preload="metadata"
     class="mx-auto w-3/4 rounded-2xl shadow-lg"
   >
-    <source src="/video/makanMakan.mp4" type="video/mp4" />
+    <source src="/video/sumbing/makanMakan.mp4" type="video/mp4" />
     Browser kamu tidak mendukung video.
   </video>
   <figcaption class="mt-3 text-center text-sm text-gray-400">
@@ -146,22 +146,22 @@ kita otw sekitar jam 9 an, baru nanjak sebentar si al udah ngeluh perutnya ga en
 <figure class="my-8">
   <div class="mx-auto w-full sm:w-5/6 md:w-3/4 lg:w-2/3 space-y-3">
     <img
-      src="/images/pestan-1-1.jpg"
+      src="/images/sumbing/pestan-1-1.jpg"
       alt="Pestan 1"
       class="w-full rounded-2xl shadow-md"
     />
     <img
-      src="/images/pestan-1-2.jpg"
+      src="/images/sumbing/pestan-1-2.jpg"
       alt="Pestan 2"
       class="w-full rounded-2xl shadow-md"
     />
     <img
-      src="/images/pestan-1-3.jpg"
+      src="/images/sumbing/pestan-1-3.jpg"
       alt="Pestan 3"
       class="w-full rounded-2xl shadow-md"
     />
     <img
-      src="/images/pestan-1-4.jpg"
+      src="/images/sumbing/pestan-1-4.jpg"
       alt="Pestan 4"
       class="w-full rounded-2xl shadow-md"
     />
@@ -177,7 +177,7 @@ setelah foto-foto kita lanjut naik lagi menuju puncak. treknya udah mulai masuk 
 <figure
   style="display:flex; flex-direction:column; align-items:center; margin:24px 0;">
   <img
-    src="/images/pestan-1-5.jpg"
+    src="/images/sumbing/pestan-1-5.jpg"
     alt=" trek setelah pestan"
     style="width:min(100%, 660px); border-radius:16px; display:block;"
   />
@@ -192,12 +192,12 @@ ryan sama kete udah jauh didepan ninggalin gua sama al dibelakang, sebenernya ca
 <figure class="my-8">
   <div class="grid grid-cols-2 gap-4">
     <img
-      src="/images/pasarWatu-1.jpg"
+      src="/images/sumbing/pasarWatu-1.jpg"
       alt="Pasar Watu 1"
       class="w-full rounded-2xl shadow-md"
     />
     <img
-      src="/images/pasarWatu-2.jpg"
+      src="/images/sumbing/pasarWatu-2.jpg"
       alt="Pasar Watu 2"
       class="w-full rounded-2xl shadow-md"
     />
@@ -212,11 +212,11 @@ karena kete dan al masih sibuk pacaran gua sama ryan lanjut naik lagi ninggalin 
 <div class="my-8 grid grid-cols-2 gap-4">
 
 <figure>
-<video src="/video/jurang1.mp4" controls playsinline preload="metadata" class="w-full rounded-2xl shadow-lg" style="aspect-ratio:9/16;max-height:420px;object-fit:cover;"></video>
+<video src="/video/sumbing/jurang1.mp4" controls playsinline preload="metadata" class="w-full rounded-2xl shadow-lg" style="aspect-ratio:9/16;max-height:420px;object-fit:cover;"></video>
 </figure>
 
 <figure>
-<video src="/video/jurang2.mp4" controls playsinline preload="metadata" class="w-full rounded-2xl shadow-lg" style="aspect-ratio:9/16;max-height:420px;object-fit:cover;"></video>
+<video src="/video/sumbing/jurang2.mp4" controls playsinline preload="metadata" class="w-full rounded-2xl shadow-lg" style="aspect-ratio:9/16;max-height:420px;object-fit:cover;"></video>
 </figure>
 
 </div>
@@ -243,15 +243,15 @@ gua sampe di puncak sekitar jam 2. di Puncak ternyata ada air hujan yang ditadan
 <figure class="my-8">
 <div class="space-y-4">
 <div class="grid grid-cols-2 gap-4">
-<img src="/images/puncak-1-1.jpg" alt="Puncak Sumbing 1" class="w-full rounded-2xl shadow-md">
-<img src="/images/puncak-1-2.jpg" alt="Puncak Sumbing 2" class="w-full rounded-2xl shadow-md">
+<img src="/images/sumbing/puncak-1-1.jpg" alt="Puncak Sumbing 1" class="w-full rounded-2xl shadow-md">
+<img src="/images/sumbing/puncak-1-2.jpg" alt="Puncak Sumbing 2" class="w-full rounded-2xl shadow-md">
 </div>
 <div class="grid grid-cols-2 gap-4">
-<img src="/images/puncak-1-3.jpg" alt="Puncak Sumbing 3" class="w-full rounded-2xl shadow-md">
-<img src="/images/puncak-1-4.jpg" alt="Puncak Sumbing 4" class="w-full rounded-2xl shadow-md">
+<img src="/images/sumbing/puncak-1-3.jpg" alt="Puncak Sumbing 3" class="w-full rounded-2xl shadow-md">
+<img src="/images/sumbing/puncak-1-4.jpg" alt="Puncak Sumbing 4" class="w-full rounded-2xl shadow-md">
 </div>
 <div class="flex justify-center">
-<img src="/images/puncak-1-5.jpg" alt="Puncak Sumbing 5" class="w-1/2 rounded-2xl shadow-md">
+<img src="/images/sumbing/puncak-1-5.jpg" alt="Puncak Sumbing 5" class="w-1/2 rounded-2xl shadow-md">
 </div>
 </div>
 <figcaption class="mt-3 text-center text-sm text-gray-400">Foto-foto di Puncak Sumbing.</figcaption>
